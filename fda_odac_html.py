@@ -2,19 +2,19 @@ from datetime import date
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 
-filename = "/mnt/results/fda_odac_html_"+str(date.today())+".csv"
+filename = "/home/llh76224/r/research/odac_info/fda_odac_html_"+str(date.today())+".csv"
 f = open(filename, "w", encoding="utf-8")
 headers = "Year, Date, Agenda, Material, Link\n"
 f.write(headers)
 
 today = date.today()
-for i in range(0,4):
+for i in range(0,1):
     yrs=str(today.year-i)
     url = "https://www.fda.gov/advisory-committees/oncologic-drugs-advisory-committee/"+ yrs + "-meeting-materials-oncologic-drugs-advisory-committee"
 
     html = urlopen(url).read()
-    # pagesoup = BeautifulSoup(html, features="html.parser")
-    pagesoup = BeautifulSoup(html, features="lxml")
+    pagesoup = BeautifulSoup(html, features="html.parser")
+    # pagesoup = BeautifulSoup(html, features="lxml")
     itemlocator = pagesoup.findAll('a', {'data-entity-type': 'node'})
 
     for items in itemlocator:   
@@ -42,9 +42,10 @@ for i in range(0,4):
             if sibling.name =='h3':
                 # print('Not a tag of p')
                 break
-            else:
+            # else
+            if sibling.name =='p':
                 agenda=agenda + sibling.text
-        
+        agenda.replace("\n", ".")
 
         f.write(yrs.replace(","," ") + ',' +
                 dd.replace(","," ") + ',' +
