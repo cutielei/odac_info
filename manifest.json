@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "locale": "en_US.UTF-8",
+  "metadata": {
+    "appmode": "python-fastapi",
+    "entrypoint": "fda_odac_html"
+  },
+  "python": {
+    "version": "3.11.4",
+    "package_manager": {
+      "name": "pip",
+      "version": "23.3.1",
+      "package_file": "requirements.txt"
+    }
+  },
+  "files": {
+    "requirements.txt": {
+      "checksum": "28ce1e30b55e34e359e2041ad8e7349e"
+    },
+    ".Rhistory": {
+      "checksum": "08bc30b6220f5ae1f5064ce1d0cbb46f"
+    },
+    ".gitignore": {
+      "checksum": "0557d1db2d04aab4c2665d16172d6e71"
+    },
+    "fda_odac_html.py": {
+      "checksum": "5234466f6a8f7a983d3194e8af432355"
+    },
+    "fda_odac_html_2024-10-09.csv": {
+      "checksum": "ceb9c8e0137e4764a0a40592a38c791f"
+    },
+    "fda_odac_html_2024-10-10.csv": {
+      "checksum": "00afbdb7c0736f17c2d8559366321c1a"
+    },
+    "fda_odac_html_2024-10-16.csv": {
+      "checksum": "00afbdb7c0736f17c2d8559366321c1a"
+    },
+    "odac_info.Rproj": {
+      "checksum": "c8d3f84a410f46d4d8b03a268e313e35"
+    },
+    "old.csv": {
+      "checksum": "2daba583d825be3404aff4726ccfbc6e"
+    }
+  }
+}
