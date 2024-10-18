@@ -2,7 +2,7 @@
   "version": 1,
   "locale": "en_US.UTF-8",
   "metadata": {
-    "appmode": "python-fastapi",
+    "appmode": "python-api",
     "entrypoint": "fda_odac_html"
   },
   "python": {
@@ -15,7 +15,7 @@
   },
   "files": {
     "requirements.txt": {
-      "checksum": "28ce1e30b55e34e359e2041ad8e7349e"
+      "checksum": "bff59e4d6c50a3b98f49e7f401d741c2"
     },
     ".Rhistory": {
       "checksum": "08bc30b6220f5ae1f5064ce1d0cbb46f"
@@ -33,6 +33,9 @@
       "checksum": "00afbdb7c0736f17c2d8559366321c1a"
     },
     "fda_odac_html_2024-10-16.csv": {
+      "checksum": "00afbdb7c0736f17c2d8559366321c1a"
+    },
+    "fda_odac_html_2024-10-18.csv": {
       "checksum": "00afbdb7c0736f17c2d8559366321c1a"
     },
     "odac_info.Rproj": {
